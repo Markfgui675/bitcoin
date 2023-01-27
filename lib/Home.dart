@@ -51,12 +51,12 @@ class _HomeState extends State<Home>{
 
               //resultado do preço do bitcoin
               Padding(padding: EdgeInsets.only(top: 32, bottom: 32),
-                      child: Text('R\$ '+ _preco.toString(), style: TextStyle(fontSize: 25),),),
+                child: Text('R\$ '+ _preco.toString(), style: TextStyle(fontSize: 25),),),
 
               //botão atualizar
               ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orange
+                      backgroundColor: Colors.orange
                   ),
                   onPressed: _recuperarPreco, child: Text('Atualizar'))
 
